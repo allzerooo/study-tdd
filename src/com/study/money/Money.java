@@ -8,7 +8,7 @@ public abstract class Money {
     abstract Money times(int multiplier);
 
     // 팩토리 메서드
-    static Dollar dollar(int amount) {
+    static Money dollar(int amount) {
         return new Dollar(amount);
     }
 
