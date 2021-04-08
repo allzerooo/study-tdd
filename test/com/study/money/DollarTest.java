@@ -17,7 +17,7 @@ class DollarTest {
          */
         assertEquals(new Dollar(10), product);
         product = five.times(3);
-        assertEquals(15, product.amount);
+        assertEquals(new Dollar(15), product);
     }
 
     @Test
