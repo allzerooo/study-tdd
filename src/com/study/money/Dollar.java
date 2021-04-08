@@ -1,9 +1,6 @@
 package com.study.money;
 
-public class Dollar {
-
-    // amount를 쓰는 코드는 Dollar 자신뿐이라 private으로 변경
-    private int amount;
+public class Dollar extends Money {
 
     Dollar(int amount) {
         this.amount = amount;
