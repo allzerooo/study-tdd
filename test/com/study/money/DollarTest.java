@@ -9,7 +9,8 @@ class DollarTest {
     @Test
     void testMultiplication() {
         Dollar five = new Dollar(5);
-        // 변수 product는 더 이상 쓸모가 없기 때문에 인라인 시킨 코드로 변경
+
+        // Dollar의 equals가 정확하게 정확히 작동하지 않으면 -> times 역시 정확하게 작동한다는 것을 검증하기 어렵다
         assertEquals(new Dollar(10), five.times(2));
         assertEquals(new Dollar(15), five.times(3));
     }
