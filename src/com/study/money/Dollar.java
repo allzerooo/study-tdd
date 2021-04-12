@@ -2,18 +2,12 @@ package com.study.money;
 
 public class Dollar extends Money {
 
-    private String currency;
-
-    Dollar(int amount) {
+    Dollar(int amount, String currency) {
         this.amount = amount;
-        currency = "USD";
+        this.currency = "USD";
     }
 
     Money times(int multiplier) {
-        return new Dollar(amount * multiplier);
-    }
-
-    String currency() {
-        return currency;
+        return new Dollar(amount * multiplier, null);
     }
 }
