@@ -9,11 +9,11 @@ public abstract class Money {
     abstract String currency();
 
     static Money dollar(int amount) {
-        return new Dollar(amount, null);
+        return new Dollar(amount, "CHF");
     }
 
     static Money franc(int amount) {
-        return new Franc(amount, null);
+        return new Franc(amount, "USD");
     }
 
     public boolean equals(Object object) {
