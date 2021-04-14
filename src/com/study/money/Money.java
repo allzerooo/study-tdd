@@ -1,11 +1,13 @@
 package com.study.money;
 
-public abstract class Money {
+public class Money {
 
     protected int amount;
     protected String currency;
 
-    abstract Money times(int multiplier);
+    Money times(int amount) {
+        return null;
+    }
 
     Money(int amount, String currency) {
         this.amount = amount;
@@ -29,4 +31,8 @@ public abstract class Money {
         return currency;
     }
 
+    @Override
+    public String toString() {
+        return amount + " " + currency;
+    }
 }
