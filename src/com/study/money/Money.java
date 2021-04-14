@@ -13,11 +13,11 @@ public abstract class Money {
     }
 
     static Money dollar(int amount) {
-        return new Dollar(amount, "CHF");
+        return new Dollar(amount, "USD");
     }
 
     static Money franc(int amount) {
-        return new Franc(amount, "USD");
+        return new Franc(amount, "CHF");
     }
 
     public boolean equals(Object object) {
