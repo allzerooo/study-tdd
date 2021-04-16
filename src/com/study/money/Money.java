@@ -5,10 +5,6 @@ public class Money {
     protected int amount;
     protected String currency;
 
-    Money times(int amount) {
-        return null;
-    }
-
     Money(int amount, String currency) {
         this.amount = amount;
         this.currency = currency;
@@ -27,12 +23,16 @@ public class Money {
         return amount == money.amount && currency().equals(money.currency());
     }
 
+    @Override
+    public String toString() {
+        return amount + " " + currency;
+    }
+
     String currency() {
         return currency;
     }
 
-    @Override
-    public String toString() {
-        return amount + " " + currency;
+    Money times(int multiplier) {
+        return new Money(amount * multiplier, currency);
     }
 }
