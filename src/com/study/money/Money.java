@@ -50,6 +50,4 @@ public class Money implements Expression {
         return new Sum(this, addend);
     }
 
-
-
 }
